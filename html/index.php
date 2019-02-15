@@ -1,6 +1,3 @@
-<?php
-  include("co-bd.php");
-?>
 
 <!doctype html>
 <html class="no-js" lang="en">
@@ -28,7 +25,6 @@
 
   <ul class="menu align-center" >
     <li ><a href="index.html">acceuil</a></li>
-    <li ><a href="Services.html">services</a></li>
     <li ><a href="Conseils.html">conseils</a></li>
     <li ><a href="Contact.html">Contacts</a></li>
   </ul>
@@ -50,6 +46,55 @@
           Les Urgences  sont  assurées  24h/24  et  7j/7  après appel téléphonique</p>
  
     </div>
+
+
+
+  <div class="rdv">
+    <p><button class="button" data-open="#">Prendre rendez vous</button></p>
+  </div>
+
+
+
+
+<ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+  <li class="tabs-title "><a href="#panel1">Radiographie</a></li>
+  <li class="tabs-title"><a href="#panel2">Echographie (Abdominale et  échocardiographie)</a></li>
+  <li class="tabs-title"><a href="#panel3">Analyses  sanguines :         Biochimie et  hématologie</a></li>
+  <li class="tabs-title"><a href="#panel4">Laboratoire et  cytologie</a></li>
+  <li class="tabs-title"><a href="#panel5">Dentisterie</a></li>
+  <li class="tabs-title"><a href="#panel6">Chirurgie</a></li>
+   <li class="tabs-title"><a href="#panel7">Hospitalisation</a></li>
+    <li class="tabs-title"><a href="#panel8">Service  de  garde 24h/24  - 7j/7</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panel1">
+    <p>one</p>
+    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+  </div>
+  <div class="tabs-panel" id="panel2">
+    <p>two</p>
+    <img class="thumbnail" src="assets/img/generic/rectangle-7.jpg">
+  </div>
+  <div class="tabs-panel" id="panel3">
+    <p>three</p>
+    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+  </div>
+  <div class="tabs-panel" id="panel4">
+    <p>four</p>
+    <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+  </div>
+  <div class="tabs-panel" id="panel5">
+    <p>five</p>
+    <p>Check me out! I'm a super cool Tab panel with text content!</p>
+  </div>
+  <div class="tabs-panel" id="panel6">
+    <p>six</p>
+    <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+  </div>
+</div>
+
+
 
 
     <script src="../node_modules/jquery/dist/jquery.js"></script>
