@@ -1,11 +1,10 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+  
     <link rel="stylesheet" href="../css/app.css">
   </head>
   <body>
@@ -50,13 +49,13 @@
 
 
   <div class="rdv">
-    <p><button class="button" data-open="#">Prendre rendez vous</button></p>
+    <p><button class="button" data-open="../calendar/public/calendrier.php">Prendre rendez vous</button></p>
   </div>
 
 
 
 
-<ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+<ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="infos_services">
   <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Radiographie</a></li>
   <li class="tabs-title"><a href="#panel2">Echographie (Abdominale et  échocardiographie)</a></li>
   <li class="tabs-title"><a href="#panel3">Analyses  sanguines :         Biochimie et  hématologie</a></li>
@@ -66,9 +65,9 @@
     <li class="tabs-title"><a href="#panel7">Service  de  garde 24h/24  - 7j/7</a></li>
 </ul>
 
-<div class="tabs-content" data-tabs-content="example-tabs">
+<div class="tabs-content" data-tabs-content="infos_services">
   <div class="tabs-panel is-active" id="panel1">
-    <p>Comment se réalise une radiographie vétérinaire ?
+    <p class="titre-conseils">Comment se réalise une radiographie vétérinaire ?
 </p>
     <p>La plupart des examens radiographiques se font sur animal vigil. Certains examens complexes, nécessitant un positionnement précis ou des examens avec produit de contraste peuvent nécessiter une sédation ou une anesthésie générale.
 
@@ -77,7 +76,7 @@ En règle générale deux projections orthogonales sont effectuées (ex : face e
 L’emploi de produit de contraste est fréquent (ex : marquage oesophagien, marquage de l’appareil urinaire…).</p>
   </div>
   <div class="tabs-panel" id="panel2">
-    <p>Comment se réalise une échographie</p>
+    <p class="titre-conseils">Comment se réalise une échographie</p>
     <p>En médecine vétérinaire, une échographie se réalise la plupart du temps sur animaux vigiles. Il est parfois nécessaire de tranquiliser/sédater l’animal afin d’avoir une bonne contention du patient. Enfin certain sujets nécessitent une anesthésie courte mais générale.
 En revanche lors de  prélèvements échoguidés, il est fréquemment nécessaire d’avoir recours à une tranquillisation, comme pour des cytoponctions, voire une anesthésie pour des biopsies.
 En général lors d’examen abdominal, il est préférable de laisser l’animal à jeun (12 h avant l’examen). L’animal est couché sur le dos. Des coussins de contention peuvent être utilisés pour le confort de l’animal, leur inclinaison permet aussi de faire « descendre » les organes dans la cavité abdominale. L’animal peut être aussi couché sur un coté puis un autre. Lors d’examen thoracique l’animal est debout ou couché sur un des deux cotés.
@@ -88,7 +87,7 @@ L’examen dure en général entre 10 et 30 minutes.
 NB : il est toujours préférable de laisser l’animal à jeun avant tout examen si ce dernier nécessite une tranquillisation ou une anesthésie.</p>
   </div>
   <div class="tabs-panel" id="panel3">
-    <p>comment se réalise une analyse sanguines</p>
+    <p class="titre-conseils">comment se réalise une analyse sanguines</p>
     <p>La prise de sang chez les animaux domestiques est un instrument de diagnostic très important. Elle permet d’effectuer un grand nombre d’analyses. Si l’animal est collaboratif, il est possible de la faire sans anesthésie. Au contraire, s’il est terrorisé ou agressif, il faut le tranquilliser. Dans tous les cas, le sujet doit être à jeûn depuis au moins 8 heures. Le prélèvement est très rapide et ne cause qu’un léger inconfort à l’animal.
 
 Les analyses effectuées sont souvent les mêmes que l’on peut faire sur le sang humain. La numération formule permet de connaître la quantité et la qualité des globules rouges, des différents types de globules blancs et des plaquettes. Cela permet, par exemple, de diagnostiquer des anémies, des infections bactériennes, virales, parasitaires ou des réactions allergiques. Il existe aussi des test spécifiques pour certaines pathologies.
@@ -96,20 +95,20 @@ Les analyses effectuées sont souvent les mêmes que l’on peut faire sur le sa
 Le bilan biochimique permet de mesurer différentes composantes sanguines qui permettent d’évaluer le fonctionnement des différents organes et la quantité de certaines composantes sanguines comme le glucose et les triglycérides (d’où la nécessité du jeune). La plupart de ces composantes fait partie du métabolisme de plusieurs organes. C’est pour cette raison qu’on fait un bilan de plusieurs paramètres plutôt qu’en analyser un seul.</p>
   </div>
   <div class="tabs-panel" id="panel4">
-  <p> qu'es ce que la cytologie</p>
+  <p class="titre-conseils"> qu'es ce que la cytologie</p>
     <p>La cytologie est un des moyens les plus fiables et les moins onéreux permettant d'identifier certaines tumeurs au chevet du malade et ainsi d'orienter l'attitude thérapeutique ou chirurgicale.
 
 La cytologie des liquides biologiques (LCR, synovial, épanchement) permet aussi d'obtenir des éléments diagnostiques clés.</p>
     
   </div>
   <div class="tabs-panel" id="panel5">
-    <p>comment se réalise un soins dentaire ?</p>
+    <p class="titre-conseils">comment se réalise un soins dentaire ?</p>
     <p>Pour réaliser des soins dentaires de qualité chez le chien et chat, le vétérinaire utilise le même matériel et les mêmes techniques que le dentiste pour l’Homme :
 
 il utilise en particulier « une fraise » et de nombreux autres équipements spécifiques de dentisterie qui lui permettent de prodiguer les meilleurs soins.</p>
   </div>
   <div class="tabs-panel" id="panel6">
-   <p>déroulement pré operatoire</p>
+   <p class="titre-conseils">déroulement pré operatoire</p>
     <p>Lorsque votre compagnon va subir une intervention chirurgicale, une visite au préalable est fortement recommandée. Elle permettra au vétérinaire de contrôler l'état de santé de votre animal et de s'assurer ainsi que tout risque dû á l'anesthésie est écarté (cœur, respiration).
 
 Le jour de l'opération, il doit être á jeun environ 12 heures avant la chirurgie; sous l'effet de l'anesthésie, l'animal a le réflexe de régurgiter ses aliments. Il est donc préférable qu'il n'ait rien dans l'estomac. Il doit cependant avoir la possibilité de se désaltérer jusqu'á 3-4 heures avant l'intervention.
@@ -129,7 +128,7 @@ Pendant que l'assistante prépare l'animal, le vétérinaire procède á un lava
 Avant l'intervention, l'animal reçoit un antibiotique et un anti-inflammatoire qui couvre le temps opératoire.
 L'opération s'étant déroulée de façon stérile, il ne sera pas nécessaire par la suite de donner des médicaments.</p>
 
-<p>deroulement post operatoire</p>
+<p class="titre-conseils">deroulement post operatoire</p>
 
 <p>Suite à l'opération, l'assistante contrôle le réveil de l'animal. Celui-ci est placé en hospitalisation sous lampe chauffante. Durant l'anesthésie, la température corporelle a tendance á diminuer, même si la perfusion est chauffée et que l'animal est placé sur un coussin chauffant. La lampe permet donc un meilleur confort post-opératoire. 
 L'heure à laquelle les maîtres peuvent récupérer leur compagnon dépend de la vitesse de réveil de ce dernier. Votre compagnon vous retrouvera dès qu'il sera en pleine possession de ses moyens. L'animal étant ravi de retrouver ses maîtres, il est plus pratique et facile de lui retirer la perfusion avant leur arrivée.
