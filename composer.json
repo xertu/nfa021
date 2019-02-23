@@ -1,0 +1,16 @@
+{
+    "name": "aurig/nfa021",
+    "authors": [
+        {
+            "name": "xertu",
+            "email": "aurignac.johann@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"Calendar\\": "source/calendar",
+            "App\\": "source/App"
+    	}
+    },
+    "require": {}
+}

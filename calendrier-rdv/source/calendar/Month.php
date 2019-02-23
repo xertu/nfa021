@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\dates;
+namespace calendar;
 
 
 class Month
@@ -25,7 +25,7 @@ class Month
 	public function __construct(?int $month = null, ?int $year = null)
 	{
 
-		if ($month === null) {
+		if ($month === null || $month < 1 || $month > 12) {
 			$month = intval(date('m'));
 		}
 
@@ -33,11 +33,6 @@ class Month
 			$year = intval(date('Y'));
 		}
 
-		if ($month < 1 || $month > 12) {
-			throw new \Exception("mois non valide");
-			
-		}
-		$month = $month % 12;
 		$this->month = $month;
 		$this->year = $year;
 	}
@@ -49,9 +44,9 @@ class Month
 
 
 
-	public function getStartingDay () : \DateTime {
-		return new \DateTime("{$this->year}-{$this->month}-01");
-	}
+public function getStartingDay () : \DateTime {
+	return new \DateTime("{$this->year}-{$this->month}-01");
+}
 
 
 

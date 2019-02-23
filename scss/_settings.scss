@@ -874,8 +874,9 @@ $xy-block-grid-max: 8;
 background-image:url(../images/veterinaire.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  text-align: center;
-  
+  color: $white;
+  display: flex;
+
 }
 
 .menu {
@@ -918,9 +919,6 @@ background-image:url(../images/veterinaire.jpg);
   list-style-type: none;
 }
 
-title-bar-title{
-  
-}
 
 .calendar_othermonth .calendar_day {
   opacity: 0.4;
@@ -930,4 +928,146 @@ title-bar-title{
 .titre-conseils {
   display: flex;
   justify-content: center;
+}
+
+.calendar_table {
+  width: 100%;
+  height: 450px;
+
+}
+
+.table {
+  height: 100%;
+width: 75%;
+}
+
+.calendar_day {
+  width: 14.28%;
+  height: 20%;
+}
+
+
+.rdv {
+  width: 100%;
+  height:50px;
+  background-color:black;
+}
+
+
+.titre {
+  font-size: 500%;
+  color: $white;
+  margin: auto;
+
+}
+
+
+#portrait {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portrait:after {
+    content: '';
+    position: absolute;
+    top: -90em; left: 0;
+    border-top: 2400em solid transparent;
+    border-left: 700em solid #0787ce;
+    width: 0;
+}
+
+.sylvie {
+ position: absolute;
+ top:-40px;
+ right:-45px;
+  width: 60%;
+  height: auto;
+}
+
+.presentation {
+  
+  height: 100%;
+  background-color: #0787ce;
+  color: $white;
+  font-size: 150%;
+}
+
+.tableau_infos_services {
+  margin-top:5%;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.equipes {
+  margin-top: 5%;
+
+}
+
+.t-titre {
+display:flex;
+justify-content: center;
+width:100%;
+  background-color: white;
+}
+
+.titre-section {
+margin-top:3%;
+width: 75%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-style:hidden;
+  border-radius:2.5em;
+  border-bottom: solid;
+  border-color: grey;
+  background-color: #0787ce;
+  
+}
+
+.map{
+  margin-top: 5%;
+}
+
+.formulaire {
+  margin-top: 5%;
+}
+
+.conseils {
+  margin-top: 5%;
+
+}
+
+.navigation {
+  font-size: 250%;
+}
+
+.conseils {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bloc-conseils {
+  width: 55%;
+  border-style: hidden;
+  border-radius:5px;
+
+  background-color: #0787ce;
+}
+
+.lisez {
+  font-size: 125%;
+  display: flex;
+  justify-content: center;
+}
+
+.cons-pics {
+  max-width: 20em;
+  height: auto;
+}
+
+.mail-cat {
+  font-size: 125%;
 }

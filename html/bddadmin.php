@@ -13,7 +13,7 @@ espace membre puisse fonctionner correctement.
 // mysql_select_db('users');
 
 
-$link = mysqli_connect('localhost', 'root', '', 'cat-clinic');
+$link = mysqli_connect('localhost', 'root', '', 'admin-calendar');
 
 if (!$link) {
     die('Erreur de connexion (' . mysqli_connect_errno() . ') '
