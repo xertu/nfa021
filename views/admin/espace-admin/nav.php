@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -19,10 +21,14 @@
 
 
   <ul class="menu align-center" >
-    <li ><a href="../../html/index.php">accueil</a></li>
-    <li><a href="../../test_admin/index.php">articles</a></li>
-    <a href="../../test_admin/admin/index.php">espace admin</a>
+    <li ><a class="navigation" href="../../html/index.php">accueil</a></li>
+    <li ><a class="navigation" href="index.php">fiches conseils</a></li>
+    <li><a class="navigation" href="../../calendrier-rdv/public/calendrier.php">rdv</a></li>
+   
+
   </ul>
 
 </div>
 </div>
+<script src="../../jss/app.js"></script>
+<script src="../../jss/exercice.js"></script>

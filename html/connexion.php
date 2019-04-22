@@ -8,8 +8,7 @@ include('bddadmin.php');
         <link rel="stylesheet" href="../css/app.css">
         <title>page admin</title>
     </head>
-    <body>
-    	
+    <body id="bgco" >
 <?php
 //Si lutilisateur est connecte, on le deconnecte
 if(isset($_SESSION['username']))
@@ -62,6 +61,7 @@ else
 ?>
 <div class="message">Vous avez bien été connecté. Vous pouvez accéder à votre espace membre.<br />
 <a href="../calendrier-rdv/public/calendrier.php">rendez vous</a><br />
+<a href="../changecontent/Bdd2-0/Php/index.php">Fiches conseils</a>
 <li ><a href="index.php">accueil</a></li>
 <?php
 		}
@@ -85,8 +85,8 @@ else
 	}
 	//On affiche le formulaire
 ?>
-<div class="content">
-    <form action="connexion.php" method="post">
+<div id="form-co" class="content">
+    <form id="form" action="connexion.php" method="post">
         Veuillez entrer vos identifiants pour vous connecter:<br />
         <div class="center">
             <label for="username">Nom d'utilisateur</label><input type="text" name="username" id="username" value="<?php echo htmlentities($ousername, ENT_QUOTES, 'UTF-8'); ?>" /><br />

@@ -1,10 +1,5 @@
 
-<?php 
-session_start();
 
-
-require_once '../test_admin/Database.php';
- ?>
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -13,6 +8,7 @@ require_once '../test_admin/Database.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
     <link rel="stylesheet" href="../css/app.css">
+    
   </head>
   <body>
 
@@ -26,23 +22,24 @@ require_once '../test_admin/Database.php';
 
 
   <ul class="menu align-center" >
-    <li ><a class="navigation" href="index.php">accueil</a></li>
-    <li ><a class="navigation" href="#services">services</a></li>
-    <li ><a class="navigation" href="../test_admin/index.php">fiches conseils</a></li>
-    <li ><a class="navigation" href="#contact">Contacts</a></li>
+    <li ><a class="navigation" href="../html/index.php">accueil</a></li>
+    <li ><a class="navigation" href="../html/index.php#services">services</a></li>
+    <li ><a class="navigation" href="../html/index.php#contact">contact</a></li>
+    <li ><a class="navigation" href="../test_admin/index.php">conseils</a></li>
+   <?php if (isset($_SESSION['admin']) AND !empty($_SESSION['admin'])) {
 
-    <?php if (isset($_SESSION['admin']) AND !empty($_SESSION['admin'])) {
-
-    echo "<li><a href='../test_admin/admin/index.php'>admin</a></li>";
+    echo "<li><a href='admin/index.php'>admin</a></li>";
 } else {
  
 
-  echo "<li><a href='../test_admin/admin/login.php'>admin</a></li>";
+  echo "<li><a href='admin/login.php'>admin</a></li>";
 }
 
 
 ?>
+
    
+
   </ul>
 
 </div>
